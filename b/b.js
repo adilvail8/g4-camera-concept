@@ -41,3 +41,5 @@ document.querySelectorAll('[data-pick]').forEach(b=>b.addEventListener('click',(
 modal.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',closeModal));
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.hidden)closeModal()});
 })();
+/* прячем липкую панель, пока на экране форма */
+(function(){const s=document.querySelector('.sticky'),f=document.getElementById('order');if(!s||!f)return;new IntersectionObserver(es=>{s.style.transform=es[0].isIntersecting?'translateY(110%)':'none'},{threshold:.2}).observe(f);s.style.transition='transform .25s'})();

@@ -93,4 +93,11 @@ function closeMenu(){nav.classList.remove('open');burger.setAttribute('aria-expa
 burger.onclick=()=>{const o=!nav.classList.contains('open');nav.classList.toggle('open',o);burger.setAttribute('aria-expanded',o);document.body.classList.toggle('menu-open',o)};
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
 
+
+/* подсветка раздела в меню */
+(function(){
+  const links=[...nav.querySelectorAll('a[href^="#"]')],map=new Map(links.map(a=>[a.getAttribute('href').slice(1),a]));
+  const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.remove('active'));const a=map.get(e.target.id);if(a)a.classList.add('active')}})},{rootMargin:'-45% 0px -50% 0px'});
+  map.forEach((_,id)=>{const s=document.getElementById(id);if(s)io.observe(s)});
+})();
 })();

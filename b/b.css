@@ -48,3 +48,4 @@
   .foot{padding-bottom:84px}
   .b-facts li{padding:8px 14px;font-size:13px}
 }
+@media (max-width:640px){.b-form-box{padding:26px 20px;border-radius:28px}.b-hero{padding-top:36px}.b-wrap{gap:14px}}
