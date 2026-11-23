@@ -306,3 +306,4 @@ section{padding:clamp(56px,8vw,104px) var(--pad)}
 .ph-ev div{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:12px;background:#1B1D21;font-size:11px}
 .ph-ev i{width:7px;height:7px;border-radius:50%;background:#F2A20C;flex:none}
 .ph-ev span{flex:1}.ph-ev em{font-style:normal;color:#7d838c;font-size:10px}
+section{overflow-x:clip}html{overflow-x:clip}
