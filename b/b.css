@@ -49,3 +49,37 @@
   .b-facts li{padding:8px 14px;font-size:13px}
 }
 @media (max-width:640px){.b-form-box{padding:26px 20px;border-radius:28px}.b-hero{padding-top:36px}.b-wrap{gap:14px}}
+
+/* бело-синяя тема, как 1 Service */
+.vb{--ink:#0b1b3f;--body:#47536b;--muted:#7a859b;--panel:#f6f8fc;--line:#e6ebf3;--sun:#1f6bff;--blue:#1f6bff;--blue-d:#1655d1;--tint:#eaf1ff;--wa:#17b45c;
+  font-family:'Manrope',system-ui,sans-serif;font-weight:500}
+.vb h1,.vb h2,.vb h3{font-family:'Comfortaa','Manrope',sans-serif;font-weight:700;letter-spacing:-.01em;line-height:1.18}
+.vb h3{font-weight:700}
+.vb .sun,.vb .eyebrow i{background:var(--blue);box-shadow:0 0 0 4px rgba(31,107,255,.18)}
+.vb .btn{font-weight:700}
+.vb .btn-ink{background:var(--blue);color:#fff}.vb .btn-ink:hover{background:var(--blue-d)}
+.vb .btn-wa:hover{background:#10994c}
+.vb .top{background:rgba(255,255,255,.96)}
+.vb .logo{font-family:'Comfortaa',sans-serif;font-weight:700}
+.vb .phone{font-weight:700;color:var(--ink)}
+.b-hero{max-width:none;background:linear-gradient(180deg,var(--tint) 0%,#fff 100%);padding-top:clamp(56px,9vw,112px)}
+.b-hero>*{position:relative}
+.b-hero .chip{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--blue);font-weight:700;font-size:13px;padding:7px 16px;border-radius:99px;box-shadow:0 6px 18px -10px rgba(31,107,255,.5)}
+.b-hero h1{font-size:clamp(30px,5vw,58px);max-width:18ch}
+.b-facts li{background:#fff;border-color:#dbe5f7;font-weight:600;color:var(--ink)}
+.b-facts svg{stroke:var(--blue);stroke-width:1.8}
+.row{background:#fff;border:1px solid var(--line);box-shadow:0 8px 28px rgba(11,27,63,.06);border-radius:28px}
+.row:hover{box-shadow:0 18px 40px -18px rgba(31,107,255,.35);transform:translateY(-2px)}
+.row-img{background:var(--tint);border-radius:20px}
+.row-num{background:var(--blue);color:#fff;box-shadow:none;font-weight:700}
+.row-head h3{font-weight:700;font-size:clamp(22px,2.4vw,30px)}
+.row-mp b{font-family:'Comfortaa',sans-serif;font-weight:700;color:var(--blue)}
+.b-list{background:#fff}
+.b-form{background:var(--alt,#f6f8fc)}
+.b-form-box{background:#fff;border:1px solid var(--line);box-shadow:0 8px 28px rgba(11,27,63,.06);border-radius:28px}
+.b-form-box .form input,.b-form-box .form select{background:var(--panel)}
+.vb .faq,.b-faq{background:#fff}
+.vb details{border-color:var(--line)}
+.vb summary{font-weight:700;color:var(--ink)}
+.foot{background:var(--ink);color:#c9d3ea}.foot span{color:inherit}
+.sticky{background:rgba(255,255,255,.97)}
